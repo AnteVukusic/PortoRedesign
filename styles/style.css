@@ -1,0 +1,455 @@
+body{
+    font: 15px/1.2 'Montserrat', sans-serif;
+    padding:0;
+    margin:0;
+    background-color: #f4f4f4;    
+    color: black;
+}
+
+header{
+    margin:auto;
+    width:1200px;
+    height: 90px;
+}
+header .container{
+    width:100%;
+    height: 90px;
+    
+   
+}
+header .container #logo{
+    
+    float:left;
+    width:180px;
+    max-height:90px;
+    overflow: hidden;
+  
+}
+header .container #logo img{
+    width:90%;
+    height:auto;    
+    
+}
+header .container #menu{
+    float:right;
+    margin: auto;
+    width:700px;
+
+    display: flex;
+    flex-direction: column;
+}
+header .container #menu #up-menu{
+    width:100%;
+    min-height:50px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+header .container #menu #up-menu ul{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding:0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+header .container #menu #up-menu ul li{
+    padding-right: 20px;
+    list-style: none; 
+    
+}
+header .container #menu #up-menu ul li a{
+    font-size: 12px;
+    line-height: 15px;
+    color: gray;
+    text-decoration: none;
+}
+header .container #menu #up-menu #search{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding:0;
+
+}
+header .container #menu #up-menu #search input[type=text] {
+    padding: 6px;
+    margin-top: 4px;
+    font-size: 14px;
+    border-top:solid gray;
+    border-left:solid gray;
+    border-bottom:solid gray;
+    border-width: 0px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+}
+header .container #menu #up-menu #search button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 4px;
+    margin-right: 16px;
+    background: white;
+    font-size: 14px;
+    border:solid gray;
+    border-width: 0px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+    cursor: pointer;
+  }
+  
+
+header .container #menu #down-menu{
+    width:100%;
+    height: auto;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+header .container #menu #down-menu ul{
+    
+    margin: auto;
+    padding:0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+header .container #menu #down-menu ul li{
+    
+    list-style: none;
+}
+header .container #menu #down-menu ul li > a{
+   font-size: 14px;
+   font-weight: bolder;
+   line-height: 40px;
+   color: #0183c1;
+   padding:10px 10px;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0183c1;
+    border-radius: 6px;
+    color:white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+header .dropdown-content > a{
+    border-bottom: solid white;
+    border-width: 1px;
+     font-size: 14px;
+   font-weight: bolder;
+   line-height: 40px;
+   color: white;
+   padding:10px 10px;
+   text-decoration: none;
+   text-transform: uppercase;
+    
+    
+}
+header .dropdown-content > a:hover{
+    background-color:darkblue;
+    border-radius: 6px;
+       
+    
+}
+
+header .container #menu #down-menu ul li > a:hover{
+    background-color: #285d75;
+   border-radius: 5px;
+    color:white;
+ }
+ header .container #menu #down-menu ul li:hover .dropdown-content{
+    display:block;
+    display: flex;
+    flex-direction: column;
+ }
+
+
+header .container #menu #down-menu #icons{
+    margin:auto;
+    font-size: 34px;
+    color:#0183c1;
+    width:120px;
+}
+nav{
+    height:600px;
+    width: 100vw;
+    background-image: url('img/parallax.jpg');
+}
+nav #banner{
+    margin:auto;
+    width:1200px;
+    height: 480px;
+
+}
+nav #banner #saying
+{
+    position:relative;
+    top:20%;
+    left:10%;
+    width:600px;
+    height:300px;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav #banner #saying h2{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 400;
+
+}
+nav #banner #saying h1{
+    
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+nav #banner #saying h3{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    color: gray;
+}
+nav #newsletter{
+    margin:auto;
+    width:100%;
+    height:120px;
+    background-color: black;
+    color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav #newsletter #motivation{
+    width:800px;
+    height:100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav #newsletter #email{
+    width:400px;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+nav #newsletter h2{
+    margin:0;
+    padding:0;
+    margin-left: 10%;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+nav #newsletter a{
+    
+    
+    font-family: 'Shadows Into Light Two';
+    font-size:30px;
+    color: #0183c1;
+    font-style: italic;
+    font-weight: 400;
+}
+nav #newsletter h3{
+    margin:0;
+    padding:0;
+    margin-left: 10%;
+    font-size: 15px;
+    font-weight: 100;
+    color: gray
+}
+nav #newsletter #email input[type=text] {
+    position:relative;
+    top:35%;
+    width:200px;
+    height:35px;
+    padding:5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-width: 0;
+}
+nav #newsletter #email button[type=submit]{   
+        position:relative;
+        top:35%;
+        width:80px;
+        height:45px;     
+        font-size: 16px;
+        background-color: #0183c1;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        border-width: 0;
+}
+main{
+    width:100%;
+    background-color: white;
+}
+main .schema{
+    width:1200px;
+
+    height: 700px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: solid darkgray;
+    border-width: 1px;
+
+}
+main .schema h1{
+    margin:0;
+    padding: 0;
+    text-align: center;
+
+}
+main .schema  h1 a{
+    padding:5px;
+    border-radius: 5px;
+    color:white;
+    background-color: #0183c1;
+}
+main .schema p{
+    color:gray;
+}
+main .schema img{
+    width:100%;
+    height: auto;
+}
+main .includes{
+
+    margin: auto;
+    width:1200px;
+    height:300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+main .includes #features{
+    width:700px;
+    height: 300px;
+    margin:auto;
+}
+main .includes #features p{
+      
+    color:gray;
+    font-size: 40px;
+    font-weight: 100;
+    padding:0;
+    margin:0;
+    height:80px;
+    width:100%;
+    
+    
+}
+main .includes #features p > a{
+    color:black;
+   font-weight: 900;
+}
+main .includes #features ul{
+    margin:0;
+    padding:0;
+    height: 220px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+main .includes #features ul li{
+    height:55px;
+    display: flex;
+    flex-direction: row;
+   
+}
+main .includes #features ul li #icon{
+    width:20%;
+    background-image: url('img/favicon.ico');
+    background-repeat: no-repeat;
+    background-size:30%;
+    
+}
+main .includes #features ul li #content{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+}
+main .includes #features ul li #content h2{
+    color:#0183c1;
+    margin:0;
+    padding:0;
+}
+main .includes #features ul li #content h3{
+    color:#585858;
+    font-size: 12px;
+    margin:auto;
+    padding:0;
+}
+    
+
+main .includes #more{
+    width:500px;
+    height: 300px;
+}
+
+main .includes #more p{
+      
+    color:gray;
+    font-size: 40px;
+    font-weight: 100;
+    padding-left:30px;
+    margin:0;
+    height:80px;
+    width:100%;
+    
+    
+}
+main .includes #more p > a{
+    color:black;
+    font-weight: 900;
+}
+
+main .includes #more ul{
+    margin:0;
+    padding:0 0 0 40px;
+    height: 220px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+
+}
+main .includes #more ul li{
+    height:50px;
+}
+main .includes #more ul .dropdown{
+    display: none;
+    position: relative;
+    background-color: #0183c1;
+    border-radius: 6px;
+    color:white;
+    min-width: 160px;
+    min-height: 200px;
+    padding: 5px 5px;
+    z-index: 1;
+}
+main .includes #more ul li:hover .dropdown{
+    display: block;
+}
